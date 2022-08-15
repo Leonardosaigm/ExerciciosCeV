@@ -21,7 +21,7 @@ print('-='*40+'-')
 while perg2 != 999:
     print('-'*40)
     perg2 = int(input('Você deseja mostrar as notas de qual aluno? [Digite 999 para parar!] '))
-    if perg2 != 999:
+    if perg2 <= len(lista)-1:
         print(f'As notas de {lista[perg2][0]} são {lista[perg2][1]}')
     elif perg2 == 999:
         print('Finalizando...')
